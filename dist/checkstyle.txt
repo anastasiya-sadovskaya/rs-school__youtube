@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><checkstyle version="4.3"><file name="C:\Users\Anastasia Sadovskaya\Documents\RS\empty\src\js\searchResult.js"><error line="192" column="17" severity="warning" message="Unexpected console statement. (no-console)" source="eslint.rules.no-console" /></file></checkstyle>
