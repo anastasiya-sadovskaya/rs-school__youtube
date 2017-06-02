@@ -511,7 +511,6 @@ class SearchResult {
             list.ondragstart = () => false;
 
             list.addEventListener('touchstart', (e) => {
-                console.log(e.touches[0].clientX);
                 list.startSwipe = e.touches[0].clientX;
             });
 
@@ -582,6 +581,7 @@ class SearchResult {
         __WEBPACK_IMPORTED_MODULE_0__appManager__["a" /* default */].resultsList.DOMElement.style.transform = `translateX(-${(pageNum - 1) * __WEBPACK_IMPORTED_MODULE_1__appSettings__["a" /* default */].screenWidth}px)`;
         __WEBPACK_IMPORTED_MODULE_0__appManager__["a" /* default */].resultsList.currentTranslate = -((pageNum - 1) * __WEBPACK_IMPORTED_MODULE_1__appSettings__["a" /* default */].screenWidth);
         __WEBPACK_IMPORTED_MODULE_0__appManager__["a" /* default */].resultsList.calcLoadPage();
+        __WEBPACK_IMPORTED_MODULE_0__appManager__["a" /* default */].resultsList.calcLastPage();
         __WEBPACK_IMPORTED_MODULE_0__appManager__["a" /* default */].resultsList.onPageSet();
 
         if (__WEBPACK_IMPORTED_MODULE_1__appSettings__["a" /* default */].responsItemsCount) {

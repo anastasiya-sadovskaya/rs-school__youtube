@@ -259,6 +259,7 @@ export default class SearchResult {
         AppManager.resultsList.DOMElement.style.transform = `translateX(-${(pageNum - 1) * AppSettings.screenWidth}px)`;
         AppManager.resultsList.currentTranslate = -((pageNum - 1) * AppSettings.screenWidth);
         AppManager.resultsList.calcLoadPage();
+        AppManager.resultsList.calcLastPage();
         AppManager.resultsList.onPageSet();
 
         if (AppSettings.responsItemsCount) {
